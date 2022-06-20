@@ -2,24 +2,14 @@ import { useState } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import CountriesPhoneCode from './phones.json';
 
 import ReactFlagsSelect from "react-flags-select";
 
 export default function HeroSection() {
   const [selected, setSelected] = useState("TR");
 
-  const phones = {
-    US: '+1',
-    GB: '+44',
-    DE: '+49',
-    FR: '+33',
-    ES: '+34',
-    IT: '+39',
-    RU: '+7',
-    BR: '+55',
-    IN: '+91',
-    TR: '+90',
-  }
+  const phones = CountriesPhoneCode;
 
   const settings = {
     dots: false,
@@ -48,7 +38,7 @@ export default function HeroSection() {
             </h3>
           </div>
           <div className="w-[400px] rounded-lg bg-gray-50 p-6">
-            <h4 className="text-primary-brand-color text-center font-semibold text">Giriş yap veya kayıt ol</h4>
+            <h4 className="text-primary-brand-color text-center font-semibold mb-4">Giriş yap veya kayıt ol</h4>
             <div className="flex">
               <ReactFlagsSelect
                   countries={Object.keys(phones)}
@@ -57,6 +47,9 @@ export default function HeroSection() {
                   onSelect={code => setSelected(code)}
                   className="flag-select"
               />
+              <div className="flex-1">
+                <input className="h-14 px-4 border-2 border-gray-200 rounded-lg w-full" />
+              </div>
             </div>
           </div>
       </div>

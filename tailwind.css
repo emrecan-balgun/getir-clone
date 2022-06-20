@@ -12,7 +12,7 @@
 }
 
 .flag-select button {
-    @apply h-14 border-2 border-gray-200 transition-colors hover:border-primary-brand-color
+    @apply h-14 border-2 border-gray-200 bg-white transition-colors hover:border-primary-brand-color
 }
 
 .flag-select button > span span:nth-child(2) {
