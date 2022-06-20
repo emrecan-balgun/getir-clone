@@ -698,6 +698,10 @@ html, body {
           transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .items-center {
   align-items: center;
 }
@@ -971,6 +975,11 @@ html, body {
 }
 
 .focus\:border-primary-brand-color:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(93 62 188 / var(--tw-border-opacity));
+}
+
+.group:hover .group-hover\:border-primary-brand-color {
   --tw-border-opacity: 1;
   border-color: rgb(93 62 188 / var(--tw-border-opacity));
 }
