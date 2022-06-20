@@ -417,6 +417,8 @@ video {
 
 html, body {
   font-family: 'Open Sans', sans-serif;
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale
 }
@@ -609,6 +611,14 @@ html, body {
   height: 2.75rem;
 }
 
+.h-\[500px\] {
+  height: 500px;
+}
+
+.w-full {
+  width: 100%;
+}
+
 .items-center {
   align-items: center;
 }
@@ -629,7 +639,11 @@ html, body {
 
 .bg-brand-color {
   --tw-bg-opacity: 1;
-  background-color: rgb(93 62 188 / var(--tw-bg-opacity));
+  background-color: rgb(76 51 152 / var(--tw-bg-opacity));
+}
+
+.object-cover {
+  object-fit: cover;
 }
 
 .text-sm {

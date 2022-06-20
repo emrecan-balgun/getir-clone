@@ -1,37 +1,28 @@
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 export default function HeroSection() {
+
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
+    arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1
   };
 
   return (
-    <div className="container mx-auto">
-        <h2> Single Item</h2>
-        <Slider {...settings}>
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
-        </Slider>
+    <div>
+      <Slider {...settings}>
+      <div>
+        <img className="w-full h-[500px] object-cover" src="https://getir.com/_next/static/images/getir-mainpage-1-757eca6a46304def60cabce74d3f20a2.jpg" alt="" />
       </div>
+      <div>
+        <img className="w-full h-[500px] object-cover" src="https://getir.com/_next/static/images/getir-mainpage-2-7c23764275cdaf14d7b6cf15ebbdd0c1.jpg" alt="" />
+      </div>
+      </Slider>
+    </div>
   )
 }
