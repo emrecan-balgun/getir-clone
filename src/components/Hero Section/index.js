@@ -1,8 +1,25 @@
+import { useState } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
+import ReactFlagsSelect from "react-flags-select";
+
 export default function HeroSection() {
+  const [selected, setSelected] = useState("TR");
+
+  const phones = {
+    US: '+1',
+    GB: '+44',
+    DE: '+49',
+    FR: '+33',
+    ES: '+34',
+    IT: '+39',
+    RU: '+7',
+    BR: '+55',
+    IN: '+91',
+    TR: '+90',
+  }
 
   const settings = {
     dots: false,
@@ -29,6 +46,18 @@ export default function HeroSection() {
             <h3 className="mt-8 text-4xl font-semibold text-white">
               Dakikalar içinde <br />kapınızda
             </h3>
+          </div>
+          <div className="w-[400px] rounded-lg bg-gray-50 p-6">
+            <h4 className="text-primary-brand-color text-center font-semibold text">Giriş yap veya kayıt ol</h4>
+            <div className="flex">
+              <ReactFlagsSelect
+                  countries={Object.keys(phones)}
+                  customLabels={phones}
+                  selected={selected}
+                  onSelect={code => setSelected(code)}
+                  className="flag-select"
+              />
+            </div>
           </div>
       </div>
     </div>
