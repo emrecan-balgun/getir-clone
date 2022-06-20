@@ -39,7 +39,7 @@ export default function HeroSection() {
           </div>
           <div className="w-[400px] rounded-lg bg-gray-50 p-6">
             <h4 className="text-primary-brand-color text-center font-semibold mb-4">Giriş yap veya kayıt ol</h4>
-            <div className="flex">
+            <div className="flex gap-x-2">
               <ReactFlagsSelect
                   countries={Object.keys(phones)}
                   customLabels={phones}
@@ -47,9 +47,10 @@ export default function HeroSection() {
                   onSelect={code => setSelected(code)}
                   className="flag-select"
               />
-              <div className="flex-1">
-                <input className="h-14 px-4 border-2 border-gray-200 rounded-lg w-full" />
-              </div>
+              <label className="flex-1 relative block">
+                <input required className="h-14 px-4 border-2 border-gray-200 rounded w-full transition-colors hover:border-primary-brand-color focus:border-primary-brand-color outline-none peer text-sm pt-2" />
+                <span className="absolute top-0 left-0 h-full px-4 flex items-center text-sm text-gray-700 peer-focus:h-7 peer-focus:text-primary-brand-color peer-focus:text-xs peer-valid:h-7 peer-valid:text-primary-brand-color peer-valid:text-xs transition-all">Telefon Numarası</span>
+              </label>
             </div>
           </div>
       </div>
