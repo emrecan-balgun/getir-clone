@@ -43,7 +43,7 @@ export default function HeroSection() {
       </Slider>
       <div className="container flex justify-between items-center absolute top-0 left-1/2 -translate-x-1/2 h-full z-20">
           <div>
-            <img src="https://getir.com/_next/static/images/bimutluluk-b3a7fcb14fc9a9c09b60d7dc9b1b8fd6.svg" alt="" />
+            <img src="https://getir.com/_next/static/images/bimutluluk-b3a7fcb14fc9a9c09b60d7dc9b1b8fd6.svg" alt="getir logo" />
             <h3 className="mt-8 text-4xl font-semibold text-white">
               Dakikalar içinde <br />kapınızda
             </h3>
