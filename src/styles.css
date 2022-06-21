@@ -630,6 +630,18 @@ html, body {
   left: 0px;
 }
 
+.right-0 {
+  right: 0px;
+}
+
+.top-3 {
+  top: 0.75rem;
+}
+
+.right-3 {
+  right: 0.75rem;
+}
+
 .z-20 {
   z-index: 20;
 }
@@ -697,6 +709,10 @@ html, body {
   height: 1px;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -707,6 +723,10 @@ html, body {
 
 .w-12 {
   width: 3rem;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .flex-1 {
@@ -956,6 +976,18 @@ html, body {
   --tw-text-opacity: 0.8;
 }
 
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1058,6 +1090,11 @@ html, body {
   --tw-gradient-to: transparent;
 }
 
+.hover\:border-brand-color:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(76 51 152 / var(--tw-border-opacity));
+}
+
 .hover\:bg-primary-brand-color:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(93 62 188 / var(--tw-bg-opacity));
@@ -1071,6 +1108,11 @@ html, body {
 .hover\:bg-purple-50:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(250 245 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-brand-color:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(76 51 152 / var(--tw-bg-opacity));
 }
 
 .hover\:text-brand-yellow:hover {
