@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import Banners from 'api/banners.json';
+import Title from 'components/UI/Title';
 
 export default function Campaigns() {
   const [banners, setBanners] = useState([]);
@@ -28,6 +29,7 @@ export default function Campaigns() {
 
   return (
     <div className="container mx-auto">
+      <Title>Kampanyalar</Title>
       <Slider className="md:-mx-2" {...settings}>
         {banners.length && banners.map((banner) => (
             <div key={banner.id}>
