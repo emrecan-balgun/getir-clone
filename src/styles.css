@@ -1235,6 +1235,11 @@ html, body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hover\:text-brand-color:hover {
+  --tw-text-opacity: 1;
+  color: rgb(76 51 152 / var(--tw-text-opacity));
+}
+
 .hover\:text-opacity-100:hover {
   --tw-text-opacity: 1;
 }

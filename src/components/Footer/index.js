@@ -1,3 +1,5 @@
+import Menu from 'components/UI/Menu';
+
 export default function Footer() {
   const menus = [
     {
@@ -80,9 +82,7 @@ export default function Footer() {
             </nav>
           </section>
           {
-            // menus.map((menu, index) => (
-
-            // ))
+            menus.map((menu, index) => ( <Menu key={index} {...menu} /> ))
           }
         </div>
       </div>
