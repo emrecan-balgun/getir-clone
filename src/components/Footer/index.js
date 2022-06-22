@@ -1,4 +1,6 @@
 import Menu from 'components/UI/Menu';
+import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { BiGlobe } from 'react-icons/bi';
 
 export default function Footer() {
   const menus = [
@@ -84,6 +86,29 @@ export default function Footer() {
           {
             menus.map((menu, index) => ( <Menu key={index} {...menu} /> ))
           }
+        </div>
+        <div className="flex justify-between items-center border-t border-gray-100 mt-6 py-6">
+          <div className="text-xs text-gray-700 flex gap-x-8">
+            &copy; 2022 Getir
+            <a href="#" className="text-primary-brand-color hover:underline relative before:w-[3px] before:h-[3px] before:bg-gray-600 before:absolute before:-left-4 before:top-1/2 before:-translate-y-1/2">
+              Bilgi Toplumu Hizmetleri
+            </a>
+          </div>
+          <nav className="flex gap-x-3">
+            <a href="#" className="w-8 h-8 rounded-lg text-gray-500 transition-colors hover:bg-primary-brand-color hover:text-primary-brand-color hover:bg-opacity-10 flex items-center justify-center">
+              <FaFacebook size={21} />
+            </a>
+            <a href="#" className="w-8 h-8 rounded-lg text-gray-500 transition-colors hover:bg-primary-brand-color hover:text-primary-brand-color hover:bg-opacity-10 flex items-center justify-center">
+              <FaTwitter size={21} />
+            </a>
+            <a href="#" className="w-8 h-8 rounded-lg text-gray-500 transition-colors hover:bg-primary-brand-color hover:text-primary-brand-color hover:bg-opacity-10 flex items-center justify-center">
+              <FaInstagram size={21} />
+            </a>
+            <a href="#" className="h-8 flex items-center px-2 border border-gray-100 text-sm gap-x-2 rounded text-gray-500 transition-colors hover:bg-primary-brand-color hover:text-primary-brand-color hover:bg-opacity-10 hover:border-transparent">
+              <BiGlobe size={19} />
+              Türkçe (TR)
+            </a>
+          </nav>
         </div>
       </div>
     </div>
