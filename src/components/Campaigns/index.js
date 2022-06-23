@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 import Banners from 'api/banners.json';
 import Title from 'components/UI/Title';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
-import { useWindowWidth } from '@react-hook/window-size';
 
 function NextButton({ onClick }) {
   return (
@@ -25,7 +24,6 @@ function PrevButton({ onClick }) {
 
 export default function Campaigns() {
   const [banners, setBanners] = useState([]);
-  const windowWidth = useWindowWidth();
 
   useEffect(() => {
       setBanners(Banners);
