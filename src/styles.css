@@ -741,6 +741,10 @@ html, body {
   height: 1px;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
 .w-\[150px\] {
   width: 150px;
 }
@@ -1387,8 +1391,16 @@ html, body {
     display: block;
   }
 
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:h-\[500px\] {
     height: 500px;
+  }
+
+  .md\:h-11 {
+    height: 2.75rem;
   }
 
   .md\:w-\[400px\] {
@@ -1407,6 +1419,10 @@ html, body {
 
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
   }
 
   .md\:rounded-lg {
