@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react';
-
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-
 import Banners from 'api/banners.json';
 import Title from 'components/UI/Title';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import { useWindowWidth } from '@react-hook/window-size';
 
 function NextButton({ onClick }) {
   return (
@@ -26,6 +25,7 @@ function PrevButton({ onClick }) {
 
 export default function Campaigns() {
   const [banners, setBanners] = useState([]);
+  const windowWidth = useWindowWidth();
 
   useEffect(() => {
       setBanners(Banners);
@@ -71,13 +71,15 @@ export default function Campaigns() {
   };
 
   return (
-    <div className="container mx-auto py-8">
-      <Title>Kampanyalar</Title>
-      <Slider className="-mx-2" {...settings}>
+    <div className="container mx-auto md:pt-8">
+      <div className="hidden md:block">
+        <Title>Kampanyalar</Title>
+      </div>
+      <Slider className="md:-mx-2" {...settings}>
         {banners.length && banners.map((banner) => (
             <div key={banner.id}>
-                <picture className="block px-2">
-                    <img src={banner.image} className="rounded-lg" />
+                <picture className="block md:px-2">
+                    <img src={banner.image} className="md:rounded-lg" />
                 </picture>
             </div>
         ))}
