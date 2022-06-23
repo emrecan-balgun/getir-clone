@@ -10,7 +10,7 @@ export default function Cards() {
   }, []);
 
   return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 px-4 md:px-0">
         {
           cards.length && cards.map(card => (
             <div className="bg-white p-14 rounded-lg shadow-sm flex flex-col items-center text-center" key={card.id}>

@@ -1499,6 +1499,10 @@ html, body {
     border-radius: 0.5rem;
   }
 
+  .md\:p-0 {
+    padding: 0px;
+  }
+
   .md\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
