@@ -745,6 +745,10 @@ html, body {
   height: 4rem;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .w-\[150px\] {
   width: 150px;
 }
@@ -804,6 +808,10 @@ html, body {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-center {
   align-items: center;
 }
@@ -822,6 +830,14 @@ html, body {
 
 .gap-0 {
   gap: 0px;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .gap-y-6 {
@@ -1421,6 +1437,22 @@ html, body {
     height: 2.75rem;
   }
 
+  .md\:h-8 {
+    height: 2rem;
+  }
+
+  .md\:h-10 {
+    height: 2.5rem;
+  }
+
+  .md\:h-12 {
+    height: 3rem;
+  }
+
+  .md\:h-16 {
+    height: 4rem;
+  }
+
   .md\:w-\[400px\] {
     width: 400px;
   }
@@ -1439,8 +1471,28 @@ html, body {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
   .md\:justify-between {
     justify-content: space-between;
+  }
+
+  .md\:self-end {
+    align-self: flex-end;
   }
 
   .md\:rounded-lg {
@@ -1465,15 +1517,27 @@ html, body {
   .md\:pt-8 {
     padding-top: 2rem;
   }
+
+  .md\:text-left {
+    text-align: left;
+  }
 }
 
 @media (min-width: 1024px) {
+  .lg\:h-auto {
+    height: auto;
+  }
+
   .lg\:grid-cols-8 {
     grid-template-columns: repeat(8, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
