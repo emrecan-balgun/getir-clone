@@ -736,6 +736,10 @@ html, body {
   height: 1.5rem;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .w-\[150px\] {
   width: 150px;
 }
@@ -1008,6 +1012,11 @@ html, body {
   padding-right: 1.5rem;
 }
 
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .pt-8 {
   padding-top: 2rem;
 }
@@ -1098,6 +1107,11 @@ html, body {
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.text-gray-800 {
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
 .text-opacity-80 {
@@ -1356,6 +1370,12 @@ html, body {
 .peer:focus ~ .peer-focus\:text-primary-brand-color {
   --tw-text-opacity: 1;
   color: rgb(93 62 188 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .sm\:hidden {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
